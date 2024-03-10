@@ -16,9 +16,8 @@ function Message() {
 
 
  const saveForm = async (e) => {
-  setLoading(true)
 e.preventDefault();
- axios.post("https://unusual-fawn-costume.cyclic.app/api/msg/add",{Message})
+ axios.post("https://unusual-fawn-costume.cyclic.app/api/msg/add",{Message: Message})
 .then((res)=>
 { 
 console.log("saved succesfully")
@@ -29,7 +28,6 @@ alert("Thank you! Response recieved,We will get back to you on Whatsapp.")
 }).catch((err)=> {
   console.log(err)
   alert("Unable to submit form, kindly complete the form.")
-  setLoading(false)
 })
 
 }
@@ -48,8 +46,7 @@ alert("Thank you! Response recieved,We will get back to you on Whatsapp.")
 
    useEffect(() => {
     getMessage()
-   
-    }, [])
+    }, [saveForm])
 
 
  const deleteUser = async (id) => {
