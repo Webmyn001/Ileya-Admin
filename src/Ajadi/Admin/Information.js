@@ -3,45 +3,19 @@ import React, { useEffect, useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import Button from './Button'
 import {  BallTriangle, Bars,Oval } from 'react-loader-spinner'
-function Information () {
-
- const [Loading, setLoading] =useState(false)
- const [Message, setMessage] =useState([])
-
-
-
-
-
- const navigate = useNavigate()
-
+function Information (props) {
 
  
 
 
- const getMessage = async  () => {
-    axios.get("https://unusual-fawn-costume.cyclic.app/api/msg/")
-    .then(res => {
-        console.log(res.data)
-      setMessage(res.data)
-      setLoading(true)
-    }).catch(err => {
-      console.log(err)
-    })
-   }
-
-   useEffect(() => {
-    getMessage()
-    },[])
 
 
  const deleteUser = async (id) => {
     // i want to do yes or no alert here
-    alert("This lecture will be deleted")
+    alert("This data will be deleted")
     try{
-      await axios.delete(`https://unusual-fawn-costume.cyclic.app/api/msg/${id}`);
-      alert("Data deleted.")
-      navigate("/");
-      window.location.reload()
+      await axios.delete(`https://crazy-gown-cow.cyclic.app/api/msg/${id}`);
+      alert("Data deleted, You can send new message to the users.")
         }catch (err) 
     {
     console.log(err);
@@ -57,12 +31,12 @@ function Information () {
     <div className='bg-[#f5f5f5]  text-[#1a456e]   w-full min-h-screen'>
             <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#0b46a1]  to-[#24c4da] mt-2 py-[2px]'>List Of Broadcast Message</h1>
 
-            {Loading ? <div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold"><BallTriangle height="100" width="85" radius="10" color="#1a456e" ariaLabel="loading"/></div>}
+            {props.Loading ? <div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold"><BallTriangle height="100" width="85" radius="10" color="#1a456e" ariaLabel="loading"/></div>}
     
    { 
-     Message.map((info, i) => (
-        Message.length === 0 ? 
-        <div className={`min-h-screen  flex ${Loading ? "block" : "hidden"} font-montserat text-xl font-semibold justify-center items-center`}> Oops!!! There is No Broadcast at the Moment.</div>  :
+     props.Message.map((info, i) => (
+        props.Message.length === 0 ? 
+        <div className={`min-h-screen  flex ${props.Loading ? "block" : "hidden"} font-montserat text-xl font-semibold justify-center items-center`}> Oops!!! There is No Broadcast at the Moment.</div>  :
         <div key={i}>
      <div className=' flex items-center justify-center mt-14 '>
          <button className='border-2 rounded-md w-[350px] h-fit border-b-black'>{info.Message}</button>

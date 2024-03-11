@@ -14,23 +14,20 @@ function Messages() {
     setMessage(e.target.value)
  }
 
- const navigate = useNavigate()
 
 
  const saveForm = async (e) => {
   setLoading(true)
 e.preventDefault();
- axios.post("https://unusual-fawn-costume.cyclic.app/api/msg/add",{Message: Message})
+ axios.post("https://crazy-gown-cow.cyclic.app/api/msg/add",{Message: Message})
 .then((res)=>
 { 
 console.log("saved succesfully")
-navigate("/");
-window.location.reload() 
 alert("Message sent succesfully.")
 
 }).catch((err)=> {
   console.log(err)
-  alert("Unable to submit form, kindly complete the form or commect to Network.")
+  alert("Unable to send message, kindly complete the form or connect to Network.")
   setLoading(false)
 })
 
