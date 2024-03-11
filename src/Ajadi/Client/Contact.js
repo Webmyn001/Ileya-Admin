@@ -5,6 +5,7 @@ import {FaLocationDot} from "react-icons/fa6"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BsFillTelephoneFill } from 'react-icons/bs';
 
 
 function Contact() {
@@ -36,17 +37,24 @@ function Contact() {
         </div>
         </a>
 
-        <a href="mailto:bellooladimeji53@gmail.com">
+        <a href="mailto:makeithalal18@gmail.com">
         <div className='flex items-center px-4 pt-2 gap-x-2'>
           <h1 className='text-[#c71610] text-xl'><AiOutlineMail/></h1>
-          <h1>Bellooladimeji2019@gmail.com</h1>
+          <h1>makeithalal18@gmail.com</h1>
         </div>
        </a>
 
       <a>
-        <div className='flex items-center px-4 pt-2 pb-2 gap-x-2'>
+        <div className='flex items-center px-4 pt-2 pb-3 gap-x-2'>
           <h1 className='text-[#0b46a1] text-xl'><FaLocationDot/></h1>
           <h1>Ajadi Central Mosque, Ajadi, Ologuneru, Ibadan.</h1>
+        </div>
+       </a>
+
+       <a>
+        <div className='flex items-center px-4 pt-2 pb-2 gap-x-2'>
+          <h1 className='text-[#0b46a1] text-xl'><BsFillTelephoneFill/></h1>
+          <h1>For Enquires contact: 09123476605 ,08139122219, 09055022646, 09064334413, 09064631703.</h1>
         </div>
        </a>
 

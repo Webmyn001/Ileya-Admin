@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Button from './Button'
 import {  Oval } from 'react-loader-spinner'
 
-function Home() {
+function Home(props) {
 
   const [Name, setName] = useState("")
   const [Image, setImage] = useState("")
@@ -19,7 +19,6 @@ function Home() {
   const [Loading, setLoading] =useState(false)
 
 
-  const backendMessage = "This is a Message from back-end, Hello!!! welcome to make it halal, The program is yet to start, we are starting on 5th of ramadan 1445AH, Thank you!!"
 
 
   const navigate = useNavigate()
@@ -88,7 +87,7 @@ function Home() {
   const saveForm = async (e) => {
      setLoading(true)
     e.preventDefault();
-     axios.post("https://unusual-fawn-costume.cyclic.app/api/form/add",{Name,AcctName,School,
+     axios.post("https://crazy-gown-cow.cyclic.app/api/form/add",{Name,AcctName,School,
      Level, Image, bankName, WhatsappNo,
      AcctNo, ShortNote})
     .then((res)=>
@@ -96,7 +95,7 @@ function Home() {
     console.log("saved succesfully")
     navigate("/");
     window.location.reload() 
-    alert("Thank you! Response recieved,We will get back to you on Whatsapp.")
+    alert("Thank you! Response recieved, We will get back to you on Whatsapp.")
 
   }).catch((err)=> {
       console.log(err)
@@ -104,19 +103,25 @@ function Home() {
       setLoading(false)
     })
     
-    
   }
-  
 
+    const Info = props.Message.slice(0,1)
+  
   return (
     <div  className='bg-[#f5f5f5] pb-[60px] text-[#0b46a1] w-full min-h-screen'>
       {/* Heading */}
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#0b46a1] mt-2 to-[#24c4da] py-[2px]'>MAKE IT HALAL RAMADAN RELIEF PACKAGE</h1>
 
 
-             <div className='text-center font-montserat mt-3'>
-              <marquee>{backendMessage}</marquee>
-              </div>   
+        {
+          Info.map((info,i)=> (
+            <div className='text-center font-montserat mt-1' key={i}>
+            <marquee>{info.Message}</marquee>
+            </div> 
+          ))
+        }
+
+         
 
 
              <div className=' text-center  mt-[10px] mb-[5px] '>

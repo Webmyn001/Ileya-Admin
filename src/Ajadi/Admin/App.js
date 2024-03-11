@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {BrowserRouter as Router , Route, Routes, } from "react-router-dom";
 import Contact from './Ajadi/Client/Contact'
 import Home from './Ajadi/Client/Home'
@@ -9,8 +9,7 @@ import Details from './Ajadi/Admin/Details';
 import IDcardAdmin from './Ajadi/Client/IDcardAdmin';
 import Messages from './Ajadi/Admin/Messages';
 import Information from './Ajadi/Admin/Information';
-
-
+import axios from 'axios'
 
 
 
@@ -24,7 +23,7 @@ const [Message, setMessage] =useState([])
 
 
     const getFormData = async  () => {
-        axios.get("https://unusual-fawn-costume.cyclic.app/api/form/")
+        axios.get("https://crazy-gown-cow.cyclic.app/api/form/")
         .then(res => {
           console.log(res.data)
           SetFormData(res.data)
@@ -35,7 +34,7 @@ const [Message, setMessage] =useState([])
        }
 
        const getMessage = async  () => {
-        axios.get("https://unusual-fawn-costume.cyclic.app/api/msg/")
+        axios.get("https://crazy-gown-cow.cyclic.app/api/msg/")
         .then(res => {
             console.log(res.data)
           setMessage(res.data)
