@@ -34,7 +34,7 @@ import {FaBars,FaTimes} from "react-icons/fa"
           
           
                           {/* SMALL SCREENS */}
-                   <ul className={`md:hidden fixed top-0 z-30 bg-white bg-opacity-95 w-[40%] h-[200px] right-0 shadow-2xl
+                   <ul className={`md:hidden fixed top-0 z-30 bg-white bg-opacity-95 w-[40%] h-[300px] right-0 shadow-2xl
                   flex flex-col gap-10 text-medium p-7 pt-20 rounded-2xl ease-in-out duration-500
                    ${open ? "top-0" : "top-[-200%]"}`}>
                     <Navlinks alternative={true} handleClick={handleClick} />

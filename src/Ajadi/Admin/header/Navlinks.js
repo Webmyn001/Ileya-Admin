@@ -12,6 +12,11 @@ import {Link} from "react-router-dom";
         {name: "Message",
         link : "/message"
        },
+
+       
+       {name: "Sent Messages",
+       link : "/info"
+      },
                
     ]
     

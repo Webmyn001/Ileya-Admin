@@ -7,7 +7,8 @@ import Navbar from './Ajadi/Admin/header/Navbar'
 import Admin from './Ajadi/Admin/Admin';
 import Details from './Ajadi/Admin/Details';
 import IDcardAdmin from './Ajadi/Client/IDcardAdmin';
-import Message from './Ajadi/Admin/Message';
+import Messages from './Ajadi/Admin/Messages';
+import Information from './Ajadi/Admin/Information';
 
 
 
@@ -24,7 +25,9 @@ function App() {
                {/* Admin */}
                <Route path = "/" exact element= {<Admin/>}></Route>
                <Route path = "/details/:id" exact element= {<Details/>}></Route>
-               <Route path = "/message" exact element= {<Message/>}></Route>
+               <Route path = "/message" exact element= {<Messages/>}></Route>
+               <Route path = "/info" exact element= {<Information/>}></Route>
+
 
 
               
