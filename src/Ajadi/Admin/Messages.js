@@ -55,7 +55,7 @@ navigate("/");
      <h3 className='pt-5'>Message</h3>
   <form onSubmit={saveForm} encType="multipart/form-data">
      <textarea placeholder='Send message to users ...'  value={Message} onChange={onChangeMessage} required
-        className='w-[350px] h-[150px] border-b-[1px] rounded-md px-3 focus:outline-0 text-[16px] pb-[3.5px] mt-[10px] border-[#24c4da] text-[#404348] '>
+        className='w-[300px] h-[150px] border-b-[1px] rounded-md px-3 focus:outline-0 text-[16px] pb-[3.5px] mt-[10px] border-[#24c4da] text-[#404348] '>
     </textarea>
 
     <div className='flex justify-center items-center mb-2'>
