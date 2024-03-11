@@ -124,7 +124,7 @@ function Home(props) {
          
 
 
-             <div className=' text-center  mt-[10px] mb-[5px] '>
+             <div className=' text-center  mt-[7px] mb-[5px] '>
                     <h1 className='font-medium text-[15px] '>Kindly complete the form below.</h1>
                 </div>  
 
