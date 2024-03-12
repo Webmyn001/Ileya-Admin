@@ -110,7 +110,7 @@ function Home(props) {
   return (
     <div  className='bg-[#f5f5f5] pb-[60px] text-[#0b46a1] w-full min-h-screen'>
       {/* Heading */}
-    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#0b46a1] mt-2 to-[#24c4da] py-[2px]'>MAKE IT HALAL RAMADAN RELIEF PACKAGE</h1>
+    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#0b46a1] mt-2 to-[#24c4da] py-[2px]'>MAKE IT HALAL RAMADAN RELIEF PROGRAM</h1>
 
 
         {
