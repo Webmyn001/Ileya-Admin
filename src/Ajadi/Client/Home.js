@@ -162,7 +162,7 @@ function Home(props) {
 <input placeholder='Account Name'  value={AcctName} onChange={OnchangeAcctName} required
         className='w-full border-b-[1px]  px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#24c4da] text-[#404348] '/>
 
-<input placeholder='Account Number'  value={AcctNo} onChange={OnchangeAcctNo} required type={Number} maxLength={8}
+<input placeholder='Account Number'  value={AcctNo} onChange={OnchangeAcctNo} required type="number" maxlenght="10"
         className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#24c4da] text-[#404348]'/>
 
 
