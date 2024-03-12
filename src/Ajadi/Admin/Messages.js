@@ -26,6 +26,7 @@ e.preventDefault();
 console.log("saved succesfully")
 alert("Message sent succesfully.")
 navigate("/");
+window.location.reload()
 
 
 }).catch((err)=> {

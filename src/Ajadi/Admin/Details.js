@@ -14,7 +14,7 @@ function Details() {
       // i want to do yes or no alert here
       alert("This lecture will be deleted")
       try{
-        await axios.delete(`https://unusual-fawn-costume.cyclic.app/api/form/${id}`);
+        await axios.delete(`https://crazy-gown-cow.cyclic.app/api/form/${id}`);
         alert("Data deleted.")
         navigate("/");
         window.location.reload()
@@ -46,21 +46,21 @@ function Details() {
        
 
          <h1 className='pt-2 font-semibold '>Level:</h1>
-         <h1 className='px-2'>{data.Class === "" ? "Nil" : data.Class}</h1>
+         <h1 className='px-2'>{data.Level === "" ? "Nil" : data.Level}</h1>
 
          <h1 className='pt-2 font-semibold '>Bank Name:</h1>
-         <h1 className='px-2'>{data.Qualification}</h1>
+         <h1 className='px-2'>{data.bankName}</h1>
       
 
          <h1 className='pt-2 font-semibold '>Account Name:</h1>
-         <h1 className='px-2' >{data.Status}</h1>
+         <h1 className='px-2' >{data.AcctName}</h1>
 
          <h1 className='pt-2 font-semibold '>Account Number:</h1>
-         <h1 className='px-2' >{data.Sex}</h1>
+         <h1 className='px-2' >{data.AcctNo}</h1>
 
         
          <h1 className='pt-2 font-semibold '>Short Note:</h1>
-         <h1 className='px-2'>{data.PhoneNo}</h1>
+         <h1 className='px-2'>{data.ShortNote}</h1>
 
          <a href={`https://wa.me/${data.WhatsappNo}`}>
         <div className='flex items-center px-4 pt-2  gap-x-2'>
