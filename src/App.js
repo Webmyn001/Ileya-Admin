@@ -6,7 +6,6 @@ import Footer from './Ajadi/Client/Footer/Footer'
 import Navbar from './Ajadi/Client/header/Navbar'
 import Admin from './Ajadi/Client/Admin';
 import Details from './Ajadi/Client/Details';
-import IDcardAdmin from './Ajadi/Client/IDcardAdmin';
 
 
 
