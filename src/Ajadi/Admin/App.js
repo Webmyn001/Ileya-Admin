@@ -6,7 +6,7 @@ import Footer from './Ajadi/Client/Footer/Footer'
 import Navbar from './Ajadi/Admin/header/Navbar'
 import Admin from './Ajadi/Admin/Admin';
 import Details from './Ajadi/Admin/Details';
-import IDcardAdmin from './Ajadi/Client/IDcardAdmin';
+
 import Messages from './Ajadi/Admin/Messages';
 import Information from './Ajadi/Admin/Information';
 import axios from 'axios'
