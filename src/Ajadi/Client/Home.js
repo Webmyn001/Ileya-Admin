@@ -87,7 +87,7 @@ function Home(props) {
   const saveForm = async (e) => {
      setLoading(true)
     e.preventDefault();
-     axios.post("https://crazy-gown-cow.cyclic.app/api/form/add",{Name,AcctName,School,
+     axios.post("https://friendly-hen-twill.cyclic.app/api/form/add",{Name,AcctName,School,
      Level, Image, bankName, WhatsappNo,
      AcctNo, ShortNote})
     .then((res)=>
