@@ -14,7 +14,7 @@ function Information (props) {
     // i want to do yes or no alert here
     alert("This data will be deleted")
     try{
-      await axios.delete(`https://crazy-gown-cow.cyclic.app/api/msg/${id}`);
+      await axios.delete(`https://friendly-hen-twill.cyclic.app/api/msg/${id}`);
       alert("Data deleted, You can send new message to the users.")
         }catch (err) 
     {
