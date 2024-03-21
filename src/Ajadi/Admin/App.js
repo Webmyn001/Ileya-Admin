@@ -23,7 +23,7 @@ const [Message, setMessage] =useState([])
 
 
     const getFormData = async  () => {
-        axios.get("https://crazy-gown-cow.cyclic.app/api/form/")
+        axios.get("https://friendly-hen-twill.cyclic.app/api/form/")
         .then(res => {
           console.log(res.data)
           SetFormData(res.data)
@@ -34,7 +34,7 @@ const [Message, setMessage] =useState([])
        }
 
        const getMessage = async  () => {
-        axios.get("https://crazy-gown-cow.cyclic.app/api/msg/")
+        axios.get("https://friendly-hen-twill.cyclic.app/api/msg/")
         .then(res => {
             console.log(res.data)
           setMessage(res.data)
