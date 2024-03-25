@@ -22,8 +22,9 @@ const [Loading, setLoading] =useState(false)
 const [Message, setMessage] =useState([])
 
 
+
     const getFormData = async  () => {
-        axios.get("https://friendly-hen-twill.cyclic.app/api/form/")
+        axios.get("https://test-backend-api-two.vercel.app/api/form/")
         .then(res => {
           console.log(res.data)
           SetFormData(res.data)
@@ -34,7 +35,7 @@ const [Message, setMessage] =useState([])
        }
 
        const getMessage = async  () => {
-        axios.get("https://friendly-hen-twill.cyclic.app/api/msg/")
+        axios.get("https://test-backend-api-two.vercel.app/api/msg/")
         .then(res => {
             console.log(res.data)
           setMessage(res.data)

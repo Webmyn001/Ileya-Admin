@@ -20,7 +20,7 @@ function Messages() {
  const saveForm = async (e) => {
   setLoading(true)
 e.preventDefault();
- axios.post("https://friendly-hen-twill.cyclic.app/api/msg/add",{Message: Message})
+ axios.post("https://test-backend-api-two.vercel.app/api/msg/add",{Message: Message})
 .then((res)=>
 { 
 console.log("saved succesfully")
