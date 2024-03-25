@@ -15,7 +15,7 @@ function App() {
 
 
   const getMessage = async  () => {
-    axios.get("https://friendly-hen-twill.cyclic.app/api/msg/")
+    axios.get("https://test-backend-api-two.vercel.app/api/msg/")
     .then(res => {
         console.log(res.data)
       setMessage(res.data)
