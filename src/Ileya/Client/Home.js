@@ -32,7 +32,7 @@ function Home() {
          
                 {/* RULES AND REGULATIONS */}
    <div className='flex justify-center items-center  pt-4'>
-       <div className=' font-jost w-[300px] text-[#00008b]  sm:w-[400px] border border-t-0 border-[#00008b] md:w-[550px] bg-[#faf9f6] shadow-2xl rounded-lg px-2 py-3'>
+       <div className=' font-jost w-[300px] text-[#00008b]  sm:w-[400px] border  border-[#00008b] md:w-[550px] bg-[#faf9f6] shadow-2xl rounded-lg px-2 py-3'>
           <h1 className='font-bold text-xl pb-1 text-center text-[#00008b] font-monserat'>RULES AND REGULATIONS OF THE PROGRAM</h1>
           <h3 className='font-semibold pb-1 text-[15px]'>1. Everyone is expected to pay into his/her wallet the minimum of #500 per week.</h3>
           <h3 className='font-semibold  pb-1 text-[14px]'>2. You are to collect the money only when the festival is around the corner unless there is tangible reason for that.</h3>
