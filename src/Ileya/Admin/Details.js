@@ -13,7 +13,7 @@ function Details() {
       // i want to do yes or no alert here
       alert("This lecture will be deleted")
       try{
-        await axios.delete(`https://test-backend-api-two.vercel.app/api/form/${id}`);
+        await axios.delete(`https://ileya-backend.vercel.app/api/form/${id}`);
         alert("Data deleted.")
         navigate("/");
         window.location.reload()
