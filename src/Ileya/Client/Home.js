@@ -72,7 +72,7 @@ function Home() {
         {/* FORM  */}
         
 
-             <div className={`fixed left-0 right-0 ease-in-out duration-500  ${open ? "top-8" : "top-[-200%]"}`}>
+             <div className={`fixed left-0 right-0 ease-in-out duration-1000  ${open ? "top-8" : "top-[-200%]"}`}>
                     <Form/>
               </div>
         </div>
